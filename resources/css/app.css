@@ -1,0 +1,100 @@
+/* Fonts */
+@import url('https://fonts.bunny.net/css?family=Nunito:300,400,500,600,700,800');
+
+/* Bootstrap CSS */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom Variables */
+:root {
+    /* Body */
+    --body-bg: #f8fafc;
+    
+    /* Typography */
+    --font-family-sans-serif: 'Nunito', sans-serif;
+    --font-size-base: 0.9rem;
+    --line-height-base: 1.6;
+    
+    /* Colors */
+    --bs-primary: #667eea;
+    --bs-secondary: #764ba2;
+    --bs-success: #48bb78;
+    --bs-info: #3182ce;
+    --bs-warning: #ed8936;
+    --bs-danger: #e53e3e;
+    --bs-light: #f7fafc;
+    --bs-dark: #2d3748;
+    
+    /* Custom Auth Colors */
+    --auth-gradient-start: #667eea;
+    --auth-gradient-end: #764ba2;
+    --auth-bg-light: #f8fafc;
+    --auth-text-muted: #718096;
+    --auth-border-color: #e2e8f0;
+    
+    /* Border radius */
+    --bs-border-radius: 0.5rem;
+    --bs-border-radius-lg: 0.75rem;
+    --bs-border-radius-xl: 1rem;
+    
+    /* Shadows */
+    --box-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Apply custom styles */
+body {
+    background-color: var(--body-bg);
+    font-family: var(--font-family-sans-serif);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+}
+
+/* Custom Bootstrap color overrides */
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Auth gradient styles */
+.auth-gradient {
+    background: linear-gradient(135deg, var(--auth-gradient-start), var(--auth-gradient-end));
+}
+
+.auth-bg-light {
+    background-color: var(--auth-bg-light);
+}
+
+.text-auth-muted {
+    color: var(--auth-text-muted);
+}
+
+.border-auth {
+    border-color: var(--auth-border-color);
+}
+
+/* Custom shadow utilities */
+.shadow-sm-custom {
+    box-shadow: var(--box-shadow-sm);
+}
+
+.shadow-custom {
+    box-shadow: var(--box-shadow);
+}
+
+.shadow-lg-custom {
+    box-shadow: var(--box-shadow-lg);
+}

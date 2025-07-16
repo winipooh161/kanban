@@ -12,11 +12,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule): void
     {
-        // Проверка просроченных задач каждый день в 9:00
-        $schedule->command('tasks:check-overdue')->dailyAt('09:00');
-        
-        // Дополнительная проверка в обеденное время
-        $schedule->command('tasks:check-overdue')->dailyAt('13:00');
+        // $schedule->command('inspire')->hourly();
     }
 
     /**
