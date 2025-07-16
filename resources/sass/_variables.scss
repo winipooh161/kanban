@@ -1,0 +1,34 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$primary: #667eea;
+$secondary: #764ba2;
+$success: #48bb78;
+$info: #3182ce;
+$warning: #ed8936;
+$danger: #e53e3e;
+$light: #f7fafc;
+$dark: #2d3748;
+
+// Custom Auth Colors
+$auth-gradient-start: #667eea;
+$auth-gradient-end: #764ba2;
+$auth-bg-light: #f8fafc;
+$auth-text-muted: #718096;
+$auth-border-color: #e2e8f0;
+
+// Border radius
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+
+// Shadows
+$box-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
